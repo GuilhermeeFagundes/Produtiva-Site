@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Produtiva - Home</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  <link rel="shortcut icon" href="img/logo-produtiva-1000px.ico" type="image/x-icon">
+</head>
+
+<body>
+
+  <nav class="navbar navbar-expand-lg nav-bg">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#"><img src="img/logo-produtiva-50px.png" alt=""></a>
+      <button class="navbar-toggler text-white" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span><i class="bi bi-list text-white icon-size"></i></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav m-auto mb-2 mb-lg-0 ">
+          <li class="nav-item dropdown lista-item-link px-2">
+            <a class="nav-link active text-white" aria-current="page" href="#">Home</a>
+          </li>
+          <li class="nav-item dropdown lista-item-link px-2">
+            <a class="nav-link text-white" href="pg/sobre.html">Sobre Nós</a>
+          </li>
+          <li class="nav-item dropdown lista-item-link px-2">
+            <a class="nav-link text-white" href="pg/serviços.html">Serviços</a>
+          </li>
+            <li class="nav-item dropdown lista-item-link px-2">
+              <a class="nav-link text-white" href="pg/planos.html">Planos</a>
+            </li>
+          </li>
+          <li class="nav-item dropdown lista-item-link px-2">
+            <a class="nav-link text-white" href="pg/contato.html">Contato</a>
+          </li>
+        </ul>
+
+        <!-- Button trigger modal -->
+        <button type="button" class="dropdown lista-item-link btn-modal p-2 px-3 btn-border-modal"
+          data-bs-toggle="modal" data-bs-target="#LoginModal">
+          Entrar
+        </button>
+
+        <!-- Modal de Login -->
+        <div class="modal fade" id="LoginModal" tabindex="-1" aria-labelledby="LoginModalLabel" aria-hidden="true">
+          <div class="modal-dialog ">
+            <div class=" modal-background3"> <!--mudarcor-->
+              <div class="modal-header modal-background3 d-flex justify-content-between">
+                <h1 class="modal-title fs-5 text-white" id="LoginModalLabel">Sign-in</h1>
+                <button type="button" class="btn text-light" data-bs-dismiss="modal" aria-label="Close"><i class="bi bi-x-lg"></i></button>
+              </div>
+              <div class="modal-body modal-edt m-5 p-5">
+                <h2 class="modal-login-size pb-4 text-white">Entrar na produtiva</h2>
+
+                <input class="mt-2 form-control p-2" type="email" name="" id="Nome" placeholder="E-mail:">
+                <br>
+
+                <input class="mt-2 form-control p-2" type="password" name="" id="senha" placeholder="Senha:">
+                <button class="btn text-white d-flex">Esqueceu sua senha?</button>
+              </div>
+              <div class="modal-footer d-flex justify-content-between">
+                <button class="btn text-white" data-bs-toggle="modal" data-bs-target="#registerModal">Não possui conta? Cadastrar-se</button>
+                <div>
+                  <button type="button" class="btn btn-secondary p-2 px-4" data-bs-dismiss="modal">Sair</button>
+                  <button type="button" class="btn btn-primary p-2 px-4">Entrar</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Button trigger modal -->
+        <button type="button" class="dropdown lista-item-link btn-modal p-2 px-3"
+          data-bs-toggle="modal" data-bs-target="#registerModal">
+          Cadastrar
+        </button>
+
+        <!-- Modal de Cadastro -->
+        <div class="modal fade" id="registerModal" tabindex="-1" aria-labelledby="registerModalLabel" aria-hidden="true">
+          <div class="modal-dialog">
+            <div class="modal-background3">
+              <div class="modal-header modal-background3 d-flex justify-content-between">
+                <h1 class="modal-title fs-5 text-white" id="registerModalLabel">Cadastre-se:</h1>
+                <button type="button" class="btn text-light" data-bs-dismiss="modal" aria-label="Close"><i class="bi bi-x-lg"></i></button>
+              </div>
+              <div class="modal-body modal-edt m-5 p-5">
+                <h2 class="modal-login-size pb-4 text-white">Junte-se a produtiva</h2>
+                  <label class="text-white d-flex pt-2 p-style3" for="email">Insira o seu e-mail:</label>
+                  <input class="mt-2 form-control" type="email" name="" id="Nome" placeholder="e-mail">
+                <br>
+                <label class="text-white d-flex p-style3" for="senha">Insira a sua senha:</label>
+                <input class="mt-2 form-control" type="password" name="" id="senha" placeholder="Mínimo de 8 caracteres">
+                <br>
+                <div class="">        
+                  <input type="number" id="dia" name="dia" placeholder="Dia" min="1" max="31" class="input-data px-2">
+                  <select id="mes" name="mes" placeholder="Dia" class="input-data2">
+                      <option value="">Mês</option>
+                      <option value="1">Janeiro</option>
+                      <option value="2">Fevereiro</option>
+                      <option value="3">Março</option>
+                      <option value="4">Abril</option>
+                      <option value="5">Maio</option>
+                      <option value="6">Junho</option>
+                      <option value="7">Julho</option>
+                      <option value="8">Agosto</option>
+                      <option value="9">Setembro</option>
+                      <option value="10">Outubro</option>
+                      <option value="11">Novembro</option>
+                      <option value="12">Dezembro</option>
+                  </select>
+                  <input type="number" id="ano" name="ano" placeholder="Ano" min="1900" max="2024" class="input-data">
+              </div>
+
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary p-2 px-4" data-bs-dismiss="modal">Sair</button>
+                <button type="button" class="btn btn-primary p-2 px-4">Cadastrar-se</button>
+              </div>
+            </div>
+          </div>
+        </div>       
+        
+      </div>
+    </div>
+  </nav>
+
+  <header class="header-bg">
+    <div class="pt-5">
+      <div class="text-center pt-5">
+        <figure>
+          <img src="img/logo-produtiva-200px.png" alt="Logo da empresa produtiva">
+        </figure>
+        <div>
+          <h1 class="logo-font">PRODUTIVA</h1>
+          <h2>Planeje Melhor, Viva Melhor</h2>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main>
+
+    <section class="container py-4">
+      <h1 class="display-2">Seja Bem-vindo!</h1>
+      <p class="mt-4 p-style">Apresentamos o site da Produtiva! Estamos entusiasmados em apresentar a você uma plataforma inovadora de gerenciamento de tarefas e projetos, projetada para transformar a maneira como você e sua equipe trabalham. Na Produtiva, acreditamos que a organização eficiente e a colaboração fluida são essenciais para alcançar o sucesso, e é exatamente isso que nossa plataforma oferece.</p>
+
+      <div class="cards mt-5 p-5">
+        <div class="row">
+          <div class="col-xl-3 col-lg-6 col-md-6 col-sm-12 p-1">
+            <div class="card" style="width: 100%;">
+              <img src="img/fig20.jpeg" class="card-img-top" alt="Imagem ilustrativa - planejamento">
+              <div class="card-body ajuste-card-body">
+                <h1 class="ajuste-font">Planejamento</h1>
+                <p class="card-text">O planejamento é o processo de estabelecer objetivos e determinar as ações necessárias para alcançá-los. Ele prepara a organização para o futuro, alocando recursos de forma eficiente e antecipando possíveis obstáculos.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-xl-3 col-lg-6 col-md-6 col-sm-12 p-1">
+            <div class="card" style="width: 100%;">
+              <img src="img/fig25.jpeg" class="card-img-top" alt="Imagem ilustrativa - Organização">
+              <div class="card-body ajuste-card-body">
+                <h1 class="ajuste-font">Organização</h1>
+                <p class="card-text">A organização envolve a estruturação e coordenação de recursos e atividades para alcançar os objetivos definidos. Isso inclui a criação de uma estrutura que distribua tarefas de forma lógica, facilitando o fluxo de trabalho e a utilização eficiente dos recursos.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-xl-3 col-lg-6 col-md-6 col-sm-12 p-1">
+            <div class="card" style="width: 100%;">
+              <img src="img/fig21.jpeg" class="card-img-top" alt="Imagem ilustrativa - Direção">
+              <div class="card-body ajuste-card-body">
+                <h1 class="ajuste-font">Direção</h1>
+                <p class="card-text">A direção é o ato de liderar e motivar os funcionários para executar as tarefas planejadas. Envolve comunicação clara, orientação e apoio, além de inspirar a equipe a alcançar altos níveis de desempenho.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-xl-3 col-lg-6 col-md-6 col-sm-12 p-1">
+            <div class="card" style="width: 100%;">
+              <img src="img/fig23.jpeg" class="card-img-top" alt="Imagem ilustrativa - Controle">
+              <div class="card-body ajuste-card-body">
+                <h1 class="ajuste-font">Controle</h1>
+                <p class="card-text">O controle é o monitoramento e avaliação contínua das atividades para garantir que os objetivos sejam atingidos. Inclui a medição dos resultados, a comparação com os padrões estabelecidos e a tomada de ações corretivas quando necessário.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <h1 class="mt-5">Como nossa plataforma funciona?</h1>
+      <p>A plataforma da Produtiva foi desenvolvida para simplificar o gerenciamento de tarefas e projetos, ajudando você a planejar melhor e viver melhor.
+        Com uma interface intuitiva e recursos poderosos, a Produtiva permite que você organize suas atividades diárias de maneira eficiente e colaborativa. Fluxos de trabalho versáteis para qualquer tipo de projeto. Use modelos predefinidos ou crie seu próprio para atender às demandas específicas de sua equipe. A personalização é a chave para maximizar a eficiência.</p>
+    </section>
+    
+    <section class="bg-dark text-white">
+      <div class="container py-5">
+        
+        <div class="accordion" id="accordionPanelsStayOpenExample">
+          <div class="accordion-item ">
+            <h2 class="accordion-header " id="panelsStayOpen-headingOne">
+              <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true" aria-controls="panelsStayOpen-collapseOne">
+                <h2 class="display-7">Nosso Compromisso com a Inovação e Eficiência</h2>
+              </button>
+            </h2>
+            <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show bg-gradiente3" aria-labelledby="panelsStayOpen-headingOne">
+              <div class="accordion-body">
+                <p>Na Produtiva, estamos na vanguarda da transformação digital, oferecendo muito mais do que uma simples plataforma de gerenciamento de tarefas e projetos. Somos impulsionados pela crença de que a tecnologia pode revolucionar positivamente a maneira como as equipes colaboram e alcançam seus objetivos. Nossa missão é não apenas simplificar processos, mas também inspirar mudanças significativas nos ambientes de trabalho ao redor do mundo.</p>
+                <p>Valorizamos profundamente a inovação contínua e a excelência operacional. Cada recurso da nossa plataforma é cuidadosamente projetado para oferecer uma experiência intuitiva e poderosa. Desde a gestão de projetos até a colaboração em tempo real, cada ferramenta é desenvolvida com o usuário em mente, visando facilitar fluxos de trabalho complexos e promover uma produtividade excepcional.</p>
+                
+                <p>Valorizamos profundamente a inovação contínua e a excelência operacional. Cada recurso da nossa plataforma é cuidadosamente projetado para oferecer uma experiência intuitiva e poderosa. Desde a gestão de projetos até a colaboração em tempo real, cada ferramenta é desenvolvida com o usuário em mente, visando facilitar fluxos de trabalho complexos e promover uma produtividade excepcional.</p>
+        
+                <p>Explore nosso site para descobrir como a Produtiva pode ajudar sua equipe a maximizar sua eficiência, promover uma colaboração mais eficaz e alcançar novos patamares de sucesso. Junte-se a nós na jornada para transformar a maneira como o trabalho é feito.</p>
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="panelsStayOpen-headingTwo">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false" aria-controls="panelsStayOpen-collapseTwo">
+                <h2 class="display-7">Transformando Experiências Digitais</h2>
+              </button>
+            </h2>
+            <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse bg-gradiente3" aria-labelledby="panelsStayOpen-headingTwo">
+              <div class="accordion-body">
+                <p>Na Produtiva, não nos limitamos a simples funcionalidades. Comprometemo-nos a redefinir a experiência digital das equipes.</p>
+                <p>Cada recurso em nossa plataforma é uma ponte para a inovação, projetado meticulosamente para ampliar a colaboração e otimizar a eficiência. </p>
+                <p>Desde a personalização até a escalabilidade, cada detalhe é pensado para inspirar novas formas de trabalhar de maneira inteligente e ágil. Explore como nossa abordagem pode elevar sua equipe para novos patamares de sucesso digital.</p>
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="panelsStayOpen-headingThree">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="false" aria-controls="panelsStayOpen-collapseThree">
+                <h2 class="display-7">Cultura de Excelência e Cooperação</h2>
+              </button>
+            </h2>
+            <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse bg-gradiente3" aria-labelledby="panelsStayOpen-headingThree">
+              <div class="accordion-body">
+                <p>Em um mundo dinâmico, a Produtiva é mais do que uma plataforma - é um ecossistema de excelência e cooperação. Nossa visão vai além das soluções tecnológicas; cultivamos uma cultura de aprendizado contínuo e colaboração aberta. </p>
+                <p>Cada interação com nossa plataforma é uma oportunidade para fortalecer laços, compartilhar conhecimento e impulsionar resultados excepcionais.</p>
+                <p>Descubra como podemos ajudar sua equipe a não apenas alcançar, mas superar seus objetivos, unindo forças em direção ao sucesso conjunto.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+      </div>
+    </section>
+
+    <section class="bg-gradiente2">
+      <div class="container py-5">
+        <div class="row">
+          <div class="col-xl-4 col-sm-12">
+            <div>
+              <h1 class="display-5">Sobre Nós</h1>
+              <p>Na Produtiva, nossa missão é ajudar você e sua equipe a alcançarem novos patamares de produtividade. Nossa plataforma de gerenciamento de tarefas e projetos é projetada para ser intuitiva, flexível e poderosa, permitindo que você se concentre no que realmente importa: alcançar seus objetivos.</p>
+              <h1 class="display-5">Nossa Visão</h1>
+              <p>Acreditamos que a tecnologia pode transformar a maneira como as pessoas trabalham. Por isso, estamos comprometidos em oferecer ferramentas inovadoras que simplificam a gestão de tarefas e projetos, promovendo uma colaboração eficiente e aumentando a produtividade.</p>
+              <div class="text-center pt-3 pb-5">
+                <button type="button" class="btn btn-primary btn-lg"><a href="pg/sobre.html" class="text-white text-dec">Saiba mais...</a></button>                              
+              </div>
+            </div>         
+          </div>
+          <div class="col-xl-8 col-sm-12">
+            <div id="carouselExample" class="carousel slide">
+              <div class="carousel-inner carousel-shadow">
+                <div class="carousel-item active">
+                  <img src="img/fig1.jpg" class="d-block w-100" alt="Home Office">
+                </div>
+                <div class="carousel-item">
+                  <img src="img/fig2.jpg" class="d-block w-100" alt="Home Office">
+                </div>
+                <div class="carousel-item">
+                  <img src="img/fig3.jpg" class="d-block w-100" alt="Home Office">
+                </div>
+              </div>
+              <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+  </main>
+    
+  <footer class="bg-dark p-4 text-white px-5"> 
+    <div class="d-flex justify-content-between">
+      <div class="text-start">          
+        <h1>PRODUTIVA</h1>
+        <p class="p-style2">Planeje Melhor, Viva Melhor</p>     
+      </div>
+      <div class="text-end">                   
+        <h5>Fale Conosco</h5>
+        <ul class="d-flex ajuste-lista">
+          <li class="ps-2"><a href="pg/contato.html"><i class="bi bi-whatsapp text-white"></i></a></li>
+          <li class="ps-2"><a href="pg/contato.html"><i class="bi bi-linkedin text-white"></i></a></li>
+          <li class="ps-2"><a href="pg/contato.html"><i class="bi bi-github text-white"></i></a></li>
+          <li class="ps-2"><a href="pg/contato.html"><i class="bi bi-envelope text-white"></i></a></li>
+        </ul>
+      </div>           
+    </div>
+  </footer>
+
+  <script src="js/app.js"></script>
+  <script src="js/bootstrap.bundle.min.js"></script>
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+</body>
+
+</html>
